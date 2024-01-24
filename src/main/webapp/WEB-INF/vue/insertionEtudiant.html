@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Student</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      margin-top: 50px;
+    }
+    form {
+      margin: auto;
+      width: fit-content;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    h3 {
+      color: #008080;
+      margin-bottom: 15px;
+    }
+    table {
+      margin-top: 10px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input {
+      padding: 5px;
+      border-radius: 5px;
+      margin: 5px 0;
+      width: 200px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<form method="post" action="InsertionEtudiant">
+  <h3>Ajouter un Etudiant</h3>
+  <table>
+    <tr>
+      <td><label for="nom">Nom :</label></td>
+      <td><input id="nom" required name="nom" type="text"></td>
+    </tr>
+    <tr>
+      <td><label for="cin">CIN :</label></td>
+      <td><input id="cin" required name="cin" type="text"></td>
+    </tr>
+    <tr>
+      <td><label for="moyenne">Moyenne </label></td>
+      <td><input id="moyenne" required name="moyenne" type="number"></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="width: 100%">
+        <input type="submit" value="Add" style="width: 100%">
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
